@@ -62,4 +62,3 @@ if(loggedInfromGoogle||loggedInfromEmail){
     console.log("User Logged In");
     
 }
-
