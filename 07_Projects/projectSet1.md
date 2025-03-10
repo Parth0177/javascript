@@ -2,7 +2,7 @@
 
 ## Project Link
 
-[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=1-colorChanger%2Fchaiaurcode.js)
+[Click here](https://stackblitz.com/edit/vitejs-vite-ab6lsbmy?file=index.html,1-colorChanger%2Fscript.js,1-colorChanger%2Findex.html&terminal=dev)
 
 # Solution Code
 
