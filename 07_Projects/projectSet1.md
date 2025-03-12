@@ -168,3 +168,37 @@ function endgame() {
 }
 
 ```
+
+## Project 5 Soln
+
+```javascript
+
+// generate random color
+
+const randomColor = () => {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+console.log(randomColor());
+let intervalId;
+
+const startChangingColor = () => {
+  intervalId = setInterval(changebgcolor, 1000);
+  function changebgcolor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+};
+const stopChangingColor = () => {
+  clearInterval(intervalId);
+  intervalId=null;
+};
+
+document.querySelector('#start').addEventListener('click', startChangingColor);
+document.querySelector('#stop').addEventListener('click', stopChangingColor);
+
+
+```
