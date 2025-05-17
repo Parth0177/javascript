@@ -1,12 +1,18 @@
-function savetoDb(data){
+function savetoDb(data , success , failure){
   let internetSpeed = Math.floor(Math.random()*10)+1;
   if(internetSpeed > 4){
-    console.log("Your Data was saved!", data);
-  }else{
-    console.log("Weak Connection , Data not saved");
-    
+    success();
+;  }else{
+    failure();
   }
   
 }
 
-savetoDb("Myself Parth")
+savetoDb("Myself Parth", 
+  ()=>{
+  console.log("Your data was saved");
+},
+()=>{
+  console.log("weak Coonection");
+    }
+  )
